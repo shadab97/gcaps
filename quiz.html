@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <meta name="generator" content="Jekyll v3.8.5" />
+    <title>Carousel Template · Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <style>
+        .navbar {
+            background: #1c203d;
+            color: #ffc40a !important;
+        }
+
+        .navbar-brand {
+            color: #ffc40a !important;
+            font-weight: bolder;
+        }
+
+        .nav-link {
+            color: #ffc40a !important;
+        }
+
+        .navbar-toggler {
+            color: #ffc40a !important;
+        }
+
+        .submit-btn {
+            background: #ffc40a;
+            color: #1c203d !important;
+        }
+
+        .signup-btn {
+            background: #ffc40a;
+            color: #1c203d !important;
+        }
+
+        .login-btn {
+            background: #ffc40a;
+            color: #1c203d !important;
+        }
+
+        .submit-btn {
+            background: #ffc40a;
+            color: #1c203d !important;
+        }
+
+        .signuptoday-btn {
+            background: #ffc40a;
+            color: #1c203d !important;
+        }
+
+        .carousel-item {
+            background-image: linear-gradient(rgb(28, 32, 61, 0.7),
+                    rgb(28, 32, 61, 0.7)),
+                url(img/LPU.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+
+        .question-head {
+            background: #ffc40a;
+            color: #1c203d;
+            padding: 5px;
+        }
+
+        .question {
+            color: #1c203d;
+        }
+
+        .main-box {
+            background: #17192b;
+            color: #ffc40a;
+            padding: 5%;
+            /* margin-left: 6%; */
+            border-right: 1px solid #ffc40a;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="./css/carousel.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <a class="navbar-brand lead" href="./">C<small>ollege</small>S<small>earch</small></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">--</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./college.html">Colleges<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./college.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Exams</a>
+                    </li>
+                </ul>
+                <button class="btn signup-btn mr-2">Sign up</button>
+
+                <button class="btn login-btn mr-2">Login</button>
+
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
+                    <button class="btn submit-btn my-2 my-sm-0" type="submit">
+                        Search college
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <div class=" marketing">
+        <!-- Three columns of text below the carousel -->
+        <div class="question-head">
+            <h1 class="text-center heading">Questionaire</h1>
+            <h3 class="lead text-center">That tells you which carrer or feild are most suitable for you</h3>
+        </div>
+        <div class=" container quiz pt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class=" question">Q1: What do you Most like ?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="exampleRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Computers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Machines
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            management
+                        </label>
+                    </div>
+                    <h5 class=" question">Q2: What do you Most like ?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" id="exampleRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Computers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Machines
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            management
+                        </label>
+                    </div>
+                    <h5 class=" question">Q3: What do you Most like ?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" id="exampleRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Computers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Machines
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            management
+                        </label>
+                    </div>
+                    <h5 class=" question">Q4: What do you Most like ?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" id="exampleRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Computers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Machines
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            management
+                        </label>
+                    </div>
+                    <h5 class=" question">Q5: What do you Most like ?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" id="exampleRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Computers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Machines
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            management
+                        </label>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <h5 class=" question">Q6: What do you Most like ?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" id="exampleRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Computers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Machines
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            management
+                        </label>
+                    </div>
+                    <h5 class=" question">Q7: What do you Most like ?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" id="exampleRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Computers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Machines
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            management
+                        </label>
+                    </div>
+                    <h5 class=" question">Q8: What do you Most like ?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" id="exampleRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Computers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Machines
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            management
+                        </label>
+                    </div>
+                    <h5 class=" question">Q9: What do you Most like ?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" id="exampleRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Computers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Machines
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            management
+                        </label>
+                    </div>
+                    <h5 class=" question">Q10: What do you Most like ?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q10" id="exampleRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Computers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q10" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Machines
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q10" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            management
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+    <!-- /.container -->
+
+    <!-- FOOTER -->
+    <footer class="container pt-5">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>
+            &copy; 2017-2019 Company, Inc. &middot;
+            <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+        </p>
+    </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
