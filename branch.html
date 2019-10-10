@@ -8,12 +8,16 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
     <meta name="generator" content="Jekyll v3.8.5" />
     <title>Carousel Template · Bootstrap</title>
-
+    <script src="https://kit.fontawesome.com/b07d3b1ff4.js" crossorigin="anonymous"></script>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
     <style>
+        body {
+            /* line-height: .7; */
+        }
+
         .navbar {
             background: #1c203d;
             color: #ffc40a !important;
@@ -57,28 +61,7 @@
             color: #1c203d !important;
         }
 
-        .marketing {
-            padding-top: 5%;
-        }
 
-        .featurette p {
-            color: #1c203d !important;
-            font-size: 1.5em;
-        }
-
-        .featurette-heading {
-            color: #ffc40a !important;
-            font-size: 2em;
-        }
-
-        .bd-placeholder-img {
-            font-size: 1.5rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
 
         .main-box {
             background: #17192b;
@@ -102,6 +85,28 @@
             margin: 2px;
             background: #ffc40a;
             color: #1c203d;
+        }
+
+        .list-clg {
+            /* padding: 10px; */
+            margin-top: 5px;
+            margin-left: 10px;
+
+            box-shadow: 1px 4px 10px -3px #1c203d;
+            background: white;
+            list-style: none;
+
+            color: #1c203d;
+            background: #ffc40a;
+            box-sizing: content-box;
+            max-width: 270px;
+        }
+
+        .name {
+            background: #1c203d;
+            color: #ffc40a;
+            margin-left: -15px;
+            margin-right: -15px;
         }
 
         @media (min-width: 768px) {
@@ -148,98 +153,11 @@
         </nav>
     </header>
 
-    <main role="main">
-        <div class="album  bg-light">
-            <div class="jumbotron">
-                <div class=" px-0">
-                    <h1 class="display-4 font-italic college-topic">Engineering</h1>
-                    <p class="lead">Engineering is a broad discipine which involves the application of mathematics,
-                        empirical
-                        evidence
-                        and
-                        scientific,
-                        It envelopes a wide range of sub-disciplines, each with a more specific emphasis on particular
-                        areas
-                        of
-                        applied science, technology and types of application.</p>
+    <main>
+        <div class="container-fluid">
+            <ul class="row pt-5" id="data-list">
 
-                </div>
-            </div>
-            <div class="container">
-                <h4 class="college-topic">Branches in Engineering</h4>
-                <div class="container">
-                    <div class="row branches">
-                        <div class="col-sm">
-                            <a href="/branch.html" id="cse" onclick="fun1()">Computer Science Engineering</a>
-
-                        </div>
-                        <div class="col-sm">
-                            Electronics and Communication Engineering
-                        </div>
-                        <div class="col-sm">
-                            Electrical engineering.
-                        </div>
-                    </div>
-                    <div class="row branches">
-                        <div class="col-sm">
-                            Mechanical Engineering
-                        </div>
-                        <div class="col-sm">
-                            Information Technology Engineering
-                        </div>
-                        <div class="col-sm">
-                            Civil Engineering
-                        </div>
-                    </div>
-                    <div class="row branches">
-                        <div class="col-sm">
-                            Chemical Engineering.
-                        </div>
-                        <div class="col-sm">
-                            Aeronautical Engineering
-                        </div>
-                        <div class="col-sm">
-                            Agricultural engineering
-                        </div>
-                    </div>
-                    <div class="row branches">
-                        <div class="col-sm">
-                            Mining engineering
-                        </div>
-                        <div class="col-sm">
-                            Biochemical engineering
-                        </div>
-                        <div class="col-sm">
-                            Electrical and Instrumentation Engineering
-                        </div>
-                    </div>
-                    <div class="row branches">
-                        <div class="col-sm">
-                            Metallurgical Engineering
-                        </div>
-                        <div class="col-sm">
-                            Genetic Engineering
-                        </div>
-                        <div class="col-sm">
-                            Mechatronics Engineering
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <h4 class="college-topic">Eligibility or Minimum Requirements</h4>
-                <ul class="list-group">
-                    <li class="list-group-item">10 + 2 Above 60 % Marks</li>
-                    <li class="list-group-item">Science Stream in 10 + 2</li>
-                    <li class="list-group-item">Duration: 4 years</li>
-                    <li class="list-group-item">Based on JEE Main score</li>
-                    <li class="list-group-item">Based on JEE Advance score</li>
-                </ul>
-                <br>
-                <h4 class="college-topic">Average Fees (In Lacs ):Rs 480,694
-                </h4>
-
-            </div>
-        </div>
+            </ul>
         </div>
 
         <!-- FOOTER -->
@@ -251,6 +169,7 @@
             </p>
         </footer>
     </main>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -260,10 +179,41 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
     <script>
-        function fun1() {
-            var branch = document.getElementById('cse').innerText;
-            sessionStorage["data"] = branch;
+        function create_clg(data) {
+            //console.log(data.length);
+            var ul = document.getElementById('data-list');
+            data.forEach(data => {
+
+                var li = document.createElement('li');
+                li.classList.add('list-clg', 'col-md-3');
+                li.innerHTML = `
+                    <div class="p-1 name">
+                        <p><i class="fas fa-university pr-1"></i><b>${data.Name}</b></p>
+                    </div>
+                    <div class="pr-1"><i class="fas fa-code-branch pr-1"></i>${data.Branch}</div>
+                    <div class="pr-1"><i class="fas fa-code-branch pr-1"></i>${data['Exams Accepted']}</div>
+                    <div class="pr-1"><i class="fas fa-map-marker pr-1"></i>${data.Place}</div>
+                    <div class="pr-1"><i class="fas fa-rupee-sign pr-1"></i>${data.Fees}
+                `;
+                ul.appendChild(li);
+            });
+
+
+        }
+        var branch_c = sessionStorage["data"];
+        if (branch_c == 'Computer Science Engineering') {
+            console.log("yes");
+            fetch("Json-data/computer.json")
+                .then(res => res.json())
+                .then(function (data) {
+                        console.log(data)
+                        create_clg(data)
+
+                    }
+
+                )
         }
     </script>
 </body>
