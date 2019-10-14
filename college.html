@@ -101,6 +101,120 @@
                 font-size: 3.5rem;
             }
         }
+
+        .modalDialog {
+            position: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 99999;
+            opacity: 0;
+            -webkit-transition: opacity 400ms ease-in;
+            -moz-transition: opacity 400ms ease-in;
+            transition: opacity 400ms ease-in;
+            pointer-events: none;
+        }
+
+        .modalDialog:target {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modalDialog>div {
+            width: 400px;
+            position: relative;
+            margin: 10% auto;
+            padding: 5px 20px 13px 20px;
+            border-radius: 10px;
+            background: #fff;
+            color: #1c203d;
+            background: -moz-linear-gradient(#fff, #999);
+            background: -webkit-linear-gradient(#fff, #999);
+            background: -o-linear-gradient(#fff, #999);
+        }
+
+        .close {
+            background: #606061;
+            color: #FFFFFF;
+            line-height: 25px;
+            position: absolute;
+            right: -12px;
+            text-align: center;
+            top: -10px;
+            width: 24px;
+            text-decoration: none;
+            font-weight: bold;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            border-radius: 12px;
+            -moz-box-shadow: 1px 1px 3px #000;
+            -webkit-box-shadow: 1px 1px 3px #000;
+            box-shadow: 1px 1px 3px #000;
+        }
+
+        .close:hover {
+            background: #00d9ff;
+        }
+
+        .modalDialog1 {
+            position: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 99999;
+            opacity: 0;
+            -webkit-transition: opacity 400ms ease-in;
+            -moz-transition: opacity 400ms ease-in;
+            transition: opacity 400ms ease-in;
+            pointer-events: none;
+        }
+
+        .modalDialog1:target {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modalDialog1>div {
+            width: 400px;
+            position: relative;
+            margin: 10% auto;
+            color: #1c203d;
+            padding: 5px 20px 13px 20px;
+            border-radius: 10px;
+            background: rgb(236, 230, 230);
+            background: -moz-linear-gradient(#fff, #999);
+            background: -webkit-linear-gradient(#fff, #999);
+            background: -o-linear-gradient(#fff, #999);
+        }
+
+        .close {
+            background: #606061;
+            color: #FFFFFF;
+            line-height: 25px;
+            position: absolute;
+            right: -12px;
+            text-align: center;
+            top: -10px;
+            width: 24px;
+            text-decoration: none;
+            font-weight: bold;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            border-radius: 12px;
+            -moz-box-shadow: 1px 1px 3px #000;
+            -webkit-box-shadow: 1px 1px 3px #000;
+            box-shadow: 1px 1px 3px #000;
+        }
+
+        .close:hover {
+            background: #00d9ff;
+        }
     </style>
     <!-- Custom styles for this template -->
     <link href="./css/carousel.css" rel="stylesheet" />
@@ -126,9 +240,35 @@
                         <a class="nav-link" href="#">Exams</a>
                     </li>
                 </ul>
-                <button class="btn signup-btn mr-2">Sign up</button>
+                <button class="btn signup-btn mr-2"><a href="#openModal">sign up</a></button>
+                <div id="openModal" class="modalDialog">
+                    <div><a href="#close" title="Close" class="close">X</a>
+                        <h2>login id</h2>
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
+                        <h2>Password</h2>
+                        <input class="form-control mr-sm-2" type="password" placeholder="Search" aria-label="Search" />
+                        <button class="btn submit-btn my-2 my-sm-0" type="submit">
+                            submit
+                        </button>
+                    </div>
+                </div>
 
-                <button class="btn login-btn mr-2">Login</button>
+                <button class="btn login-btn mr-2"><a href="#openModal1">Login</a></button>
+                <div id="openModal1" class="modalDialog1">
+                    <div><a href="#close" title="Close" class="close">X</a>
+                        <h2>Name</h2>
+                        <input class="form-control mr-sm-2" type="text" aria-label="Search" />
+                        <h2>email</h2>
+                        <input class="form-control mr-sm-2" type="text" aria-label="Search" />
+                        <h2>password</h2>
+                        <input class="form-control mr-sm-2" type="password" aria-label="Search" />
+                        <h2>confirm password</h2>
+                        <input class="form-control mr-sm-2" type="password" aria-label="Search" />
+                        <button class="btn submit-btn my-2 my-sm-0" type="submit">
+                            submit
+                        </button>
+                    </div>
+                </div>
 
                 <form class="form-inline mt-2 mt-md-0">
                     <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
@@ -342,6 +482,7 @@
             </p>
         </footer>
     </main>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -351,6 +492,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
 </body>
 
 </html>

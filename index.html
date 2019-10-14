@@ -118,6 +118,120 @@
                 font-size: 3.5rem;
             }
         }
+
+        .modalDialog {
+            position: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 99999;
+            opacity: 0;
+            -webkit-transition: opacity 400ms ease-in;
+            -moz-transition: opacity 400ms ease-in;
+            transition: opacity 400ms ease-in;
+            pointer-events: none;
+        }
+
+        .modalDialog:target {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modalDialog>div {
+            width: 400px;
+            position: relative;
+            margin: 10% auto;
+            padding: 5px 20px 13px 20px;
+            border-radius: 10px;
+            background: #fff;
+            color: #1c203d;
+            background: -moz-linear-gradient(#fff, #999);
+            background: -webkit-linear-gradient(#fff, #999);
+            background: -o-linear-gradient(#fff, #999);
+        }
+
+        .close {
+            background: #606061;
+            color: #FFFFFF;
+            line-height: 25px;
+            position: absolute;
+            right: -12px;
+            text-align: center;
+            top: -10px;
+            width: 24px;
+            text-decoration: none;
+            font-weight: bold;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            border-radius: 12px;
+            -moz-box-shadow: 1px 1px 3px #000;
+            -webkit-box-shadow: 1px 1px 3px #000;
+            box-shadow: 1px 1px 3px #000;
+        }
+
+        .close:hover {
+            background: #00d9ff;
+        }
+
+        .modalDialog1 {
+            position: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 99999;
+            opacity: 0;
+            -webkit-transition: opacity 400ms ease-in;
+            -moz-transition: opacity 400ms ease-in;
+            transition: opacity 400ms ease-in;
+            pointer-events: none;
+        }
+
+        .modalDialog1:target {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modalDialog1>div {
+            width: 400px;
+            position: relative;
+            margin: 10% auto;
+            color: #1c203d;
+            padding: 5px 20px 13px 20px;
+            border-radius: 10px;
+            background: rgb(236, 230, 230);
+            background: -moz-linear-gradient(#fff, #999);
+            background: -webkit-linear-gradient(#fff, #999);
+            background: -o-linear-gradient(#fff, #999);
+        }
+
+        .close {
+            background: #606061;
+            color: #FFFFFF;
+            line-height: 25px;
+            position: absolute;
+            right: -12px;
+            text-align: center;
+            top: -10px;
+            width: 24px;
+            text-decoration: none;
+            font-weight: bold;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            border-radius: 12px;
+            -moz-box-shadow: 1px 1px 3px #000;
+            -webkit-box-shadow: 1px 1px 3px #000;
+            box-shadow: 1px 1px 3px #000;
+        }
+
+        .close:hover {
+            background: #00d9ff;
+        }
     </style>
     <!-- Custom styles for this template -->
     <link href="./css/carousel.css" rel="stylesheet" />
@@ -143,9 +257,35 @@
                         <a class="nav-link" href="#">Exams</a>
                     </li>
                 </ul>
-                <button class="btn signup-btn mr-2">Sign up</button>
+                <button class="btn signup-btn mr-2"><a href="#openModal">sign up</a></button>
+                <div id="openModal" class="modalDialog">
+                    <div><a href="#close" title="Close" class="close">X</a>
+                        <h2>login id</h2>
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
+                        <h2>Password</h2>
+                        <input class="form-control mr-sm-2" type="password" placeholder="Search" aria-label="Search" />
+                        <button class="btn submit-btn my-2 my-sm-0" type="submit">
+                            submit
+                        </button>
+                    </div>
+                </div>
 
-                <button class="btn login-btn mr-2">Login</button>
+                <button class="btn login-btn mr-2"><a href="#openModal1">Login</a></button>
+                <div id="openModal1" class="modalDialog1">
+                    <div><a href="#close" title="Close" class="close">X</a>
+                        <h2>Name</h2>
+                        <input class="form-control mr-sm-2" type="text" aria-label="Search" />
+                        <h2>email</h2>
+                        <input class="form-control mr-sm-2" type="text" aria-label="Search" />
+                        <h2>password</h2>
+                        <input class="form-control mr-sm-2" type="password" aria-label="Search" />
+                        <h2>confirm password</h2>
+                        <input class="form-control mr-sm-2" type="password" aria-label="Search" />
+                        <button class="btn submit-btn my-2 my-sm-0" type="submit">
+                            submit
+                        </button>
+                    </div>
+                </div>
 
                 <form class="form-inline mt-2 mt-md-0">
                     <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
@@ -189,27 +329,40 @@
                         <div class="carousel-caption text-left">
                             <h1>IIT Delhi</h1>
                             <p>
-                                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                                Donec id elit non mi porta gravida at eget metus. Nullam id
-                                dolor id nibh ultricies vehicula ut id elit.
+                                To generate new knowledge by engaging in cutting-edge research and to promote academic
+                                growth by offering state-of-the-art undergraduate, postgraduate and doctoral programmes.
+
+                                To identify, based on an informed perception of Indian, regional and global needs, areas
+                                of specialization upon which the institute can concentrate.
+
+                                To undertake collaborative projects which offer opportunities for long-term interaction
+                                with academia and industry.
+
+                                To develop human potential to its fullest extent so that intellectually capable and
+                                imaginatively gifted leaders can emerge in a range of professions.
                             </p>
                             <p>
-                                <a class="btn btn-lg signuptoday-btn" href="#" role="button">Learn more</a>
+                                <a class="btn btn-lg signuptoday-btn" target="_blank" href="http://www.iitd.ac.in/"
+                                    role="button">visit</a>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item ci-3">
                     <div class="container">
-                        <div class="carousel-caption text-right">
+                        <div class="carousel-caption">
                             <h1>IIM Indore</h1>
                             <p>
-                                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                                Donec id elit non mi porta gravida at eget metus. Nullam id
-                                dolor id nibh ultricies vehicula ut id elit.
+                                IIM Indore seeks to be a contextually-relevant business school with world-class academic
+                                standards that develops socially-conscious managers, leaders and entrepreneurs. IIM
+                                Indore is committed to: Excellence in management education, research, and training, Use
+                                of contemporary participant-centric pedagogies and teaching methods, A presence in
+                                emerging segments of management education.
                             </p>
                             <p>
-                                <a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a>
+                                <a class="btn btn-lg btn-primary" target="_blank" href="https://www.iimidr.ac.in/"
+                                    role="button">visit
+                                </a>
                             </p>
                         </div>
                     </div>
