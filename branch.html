@@ -342,9 +342,105 @@
 
         }
         var branch_c = sessionStorage["data"];
-        if (branch_c == 'Computer Science Engineering') {
+        if (branch_c == 'cse') {
             console.log("yes");
             fetch("Json-data/computer.json")
+                .then(res => res.json())
+                .then(function (data) {
+                        console.log(data)
+                        create_clg(data)
+
+                    }
+
+                )
+        }
+        if (branch_c == 'ece') {
+            console.log("yes");
+            fetch("Json-data/Electrical_and_electronics.json")
+                .then(res => res.json())
+                .then(function (data) {
+                        console.log(data)
+                        create_clg(data)
+
+                    }
+
+                )
+        }
+        if (branch_c == 'aero') {
+            console.log("yes");
+            fetch("Json-data/aeronaitical.json")
+                .then(res => res.json())
+                .then(function (data) {
+                        console.log(data)
+                        create_clg(data)
+
+                    }
+
+                )
+        }
+        if (branch_c == 'agri') {
+            console.log("yes");
+            fetch("Json-data/Agriculture.json")
+                .then(res => res.json())
+                .then(function (data) {
+                        console.log(data)
+                        create_clg(data)
+
+                    }
+
+                )
+        }
+        if (branch_c == 'che') {
+            console.log("yes");
+            fetch("Json-data/chemical.json")
+                .then(res => res.json())
+                .then(function (data) {
+                        console.log(data)
+                        create_clg(data)
+
+                    }
+
+                )
+        }
+        if (branch_c == 'civil') {
+            console.log("yes");
+            fetch("Json-data/civil.json")
+                .then(res => res.json())
+                .then(function (data) {
+                        console.log(data)
+                        create_clg(data)
+
+                    }
+
+                )
+        }
+        if (branch_c == 'cece') {
+            console.log("yes");
+            fetch("Json-data/core electrical.json")
+                .then(res => res.json())
+                .then(function (data) {
+                        console.log(data)
+                        create_clg(data)
+
+                    }
+
+                )
+        }
+        if (branch_c == 'eee') {
+            console.log("yes");
+            fetch("Json-data/Electrical.json")
+                .then(res => res.json())
+                .then(function (data) {
+                        console.log(data)
+                        create_clg(data)
+
+                    }
+
+                )
+        }
+        if (branch_c == 'mech') {
+            console.log("yes");
+            fetch("Json-data/Mechanical.json")
                 .then(res => res.json())
                 .then(function (data) {
                         console.log(data)
